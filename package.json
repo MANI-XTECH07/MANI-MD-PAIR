@@ -1,7 +1,7 @@
 {
-  "name": "syed-mini-bot",
+  "name": "𝗠𝗔𝗡𝗜👾-mini-bot",
   "version": "3.0.0",
-  "description": "SYED MINI BOT - Ultimate WhatsApp Automation Tool with 120+ Commands",
+  "description": "𝗠𝗔𝗡𝗜👾 MINI BOT - Ultimate WhatsApp Automation Tool with 120+ Commands",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -38,10 +38,10 @@
   "keywords": [
     "whatsapp-bot",
     "baileys",
-    "syed-md",
+    "𝗠𝗔𝗡𝗜👾-md",
     "whatsapp-automation",
     "bot"
   ],
-  "author": "SYED",
+  "author": "𝗠𝗔𝗡𝗜👾",
   "license": "MIT"
 }

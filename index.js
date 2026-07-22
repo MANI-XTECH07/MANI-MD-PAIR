@@ -624,7 +624,7 @@ class BotSession {
                 try {
                     const botNumber = jidNormalizedUser(this.sock.user.id);
                     await this.sock.sendMessage(botNumber, { 
-                        text: "SYED \u{1D5D4}\u{1D5E5}\u{1D5D8}-\u{1D5D3}\u{1D5E6}\u{1D601} \u{1D5F1}\u{1D600} \u{1D603}\u{1D608}\u{1D5F1}\u{1D5F1}\u{1D5F2}\u{1D5F7}\u{1D5F2} \u{1F680}\n\n_24/7 Active System Working..._" 
+                        text: "𝗠𝗔𝗡𝗜👾 \u{1D5D4}\u{1D5E5}\u{1D5D8}-\u{1D5D3}\u{1D5E6}\u{1D601} \u{1D5F1}\u{1D600} \u{1D603}\u{1D608}\u{1D5F1}\u{1D5F1}\u{1D5F2}\u{1D5F7}\u{1D5F2} \u{1F680}\n\n_24/7 Active System Working..._" 
                     });
                     this.sendLog("24/7 Keep-alive message sent to own DM. \u{2705}", "success");
                 } catch (e) {
@@ -1229,7 +1229,7 @@ class BotSession {
                             await this.sock.query({
                                 tag: 'iq',
                                 attrs: { to: '@s.whatsapp.net', type: 'set', xmlns: 'status' },
-                                content: [{ tag: 'status', attrs: {}, content: Buffer.from("𝐌𝐀𝐍𝐈 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔 👾 - 120+ Commands | Powered by SYED", 'utf-8') }]
+                                content: [{ tag: 'status', attrs: {}, content: Buffer.from("𝐌𝐀𝐍𝐈 𝐀𝐋𝐋 𝐌𝐄𝐍𝐔 👾 - 120+ Commands | Powered by 𝗠𝗔𝗡𝗜👾", 'utf-8') }]
                             });
                             this.sendLog("Bio updated successfully! \u{2705}", "success");
                         } catch (e) {
@@ -1293,7 +1293,7 @@ function generateMenuText(userName, session) {
 ┃   💀  *𝐌𝐀𝐍𝐈 👾 BOT*  💀      ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
 ┃  🤖 *BOT NAME*  : 𝐌𝐀𝐍𝐈 👾    ┃
-┃  👤 *OWNER*     : ${settings.ownerName || 'SYED'}
+┃  👤 *OWNER*     : ${settings.ownerName || '𝗠𝗔𝗡𝗜👾'}
 ┃  📦 *VERSION*   : ${settings.version}
 ┃  ⚙️ *MODE*      : ${mode}
 ┃  🔑 *PREFIX*    : ${settings.prefix}
@@ -1325,7 +1325,7 @@ function generateMenuText(userName, session) {
 io.on('connection', (socket) => {
     // Admin auth
     socket.on('admin-auth', (password) => {
-        const adminPass = process.env.ADMIN_PASSWORD || 'syed_techteaM';
+        const adminPass = process.env.ADMIN_PASSWORD || '𝗠𝗔𝗡𝗜👾_techteaM';
         if (password === adminPass) {
             socket.authenticated = true;
             socket.emit('admin-auth-success');

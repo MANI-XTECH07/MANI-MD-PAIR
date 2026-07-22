@@ -1,4 +1,4 @@
-# 𝗠𝗔𝗡𝗜 👾 - SYEDWEBPAIRMD
+# 𝗠𝗔𝗡𝗜 𝗠𝗗 𝗣𝗔𝗜𝗥 👾
 
 Welcome to the official repository of **𝗠𝗔𝗡𝗜 👾**. This is a powerful WhatsApp automation tool designed for efficiency and versatility.
 
@@ -28,8 +28,8 @@ Join our official WhatsApp channel for updates, support, and more:
 To get started, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/MANI-XTECH07/SYEDWEBPAIRMD.git
-cd SYEDWEBPAIRMD
+git clone https://github.com/MANI-XTECH07/MANI-MD-PAIR.git
+cd MANI-MD-PAIR
 npm install
 npm start
 ```
@@ -66,7 +66,7 @@ Set up your environment variables to customize the bot:
 ## 🌐 Web Dashboard
 
 Access your dashboard at `http://localhost:3000`.
-**Default Password**: `syed_techteaM`
+**Default Password**: `𝗠𝗔𝗡𝗜👾_techteaM`
 
 ---
 
