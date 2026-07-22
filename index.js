@@ -206,7 +206,8 @@ const commands = {
     listonline: require('./commands/listonline'),
     mycmd: require('./commands/mycmd'),
     gali: require('./commands/gali'),
-    utils: require('./commands/utils')
+    utils: require('./commands/utils'),
+    new: require('./commands/new_cmds')
 };
 
 const { handleAutoread } = require('./commands/autoread');
@@ -1145,6 +1146,52 @@ class BotSession {
                                         case 'backup': await commands.backup(this.sock, from, msg, isOwner); break;
                                         case 'restore': await commands.restore(this.sock, from, msg, isOwner); break;
                                         case 'mycmd': case 'mycommands': await commands.mycmd(this.sock, from, msg); break;
+                                        
+                                        // ===== NEW COMMANDS =====
+                                        case 'ancient': await commands.new.ancient(this.sock, from, msg, q); break;
+                                        case 'hieroglyph': await commands.new.hieroglyph(this.sock, from, msg, q); break;
+                                        case 'runes': await commands.new.runes(this.sock, from, msg, q); break;
+                                        case 'cuneiform': await commands.new.cuneiform(this.sock, from, msg, q); break;
+                                        case 'papyrus': await commands.new.papyrus(this.sock, from, msg, q); break;
+                                        case 'parchment': await commands.new.parchment(this.sock, from, msg, q); break;
+                                        case 'codex': await commands.new.codex(this.sock, from, msg, q); break;
+                                        case 'fossil': await commands.new.fossil(this.sock, from, msg, q); break;
+                                        case 'ruins': await commands.new.ruins(this.sock, from, msg, q); break;
+                                        case 'tree': await commands.new.tree(this.sock, from, msg, q); break;
+                                        case 'forest': await commands.new.forest(this.sock, from, msg, q); break;
+                                        case 'ocean': await commands.new.ocean(this.sock, from, msg, q); break;
+                                        case 'mountain': await commands.new.mountain(this.sock, from, msg, q); break;
+                                        case 'sunset': await commands.new.sunset(this.sock, from, msg); break;
+                                        case 'rainbow': await commands.new.rainbow(this.sock, from, msg, q); break;
+                                        case 'storm': await commands.new.storm(this.sock, from, msg); break;
+                                        case 'tornado': await commands.new.tornado(this.sock, from, msg); break;
+                                        case 'tsunami': await commands.new.tsunami(this.sock, from, msg); break;
+                                        case 'earth': await commands.new.earth(this.sock, from, msg); break;
+                                        case 'moon': await commands.new.moon(this.sock, from, msg); break;
+                                        case 'tide': await commands.new.tide(this.sock, from, msg); break;
+                                        case 'airquality': await commands.new.airquality(this.sock, from, msg); break;
+                                        case 'uvindex': await commands.new.uvindex(this.sock, from, msg); break;
+                                        case 'pollen': await commands.new.pollen(this.sock, from, msg); break;
+                                        case 'poem': await commands.new.poem(this.sock, from, msg, this, q); break;
+                                        case 'song': await commands.new.song(this.sock, from, msg, this, q); break;
+                                        case 'rap': await commands.new.rap(this.sock, from, msg, this, q); break;
+                                        case 'script': await commands.new.script(this.sock, from, msg, this, q); break;
+                                        case 'recipe': await commands.new.recipe(this.sock, from, msg, this, q); break;
+                                        case 'cocktail': await commands.new.cocktail(this.sock, from, msg, this, q); break;
+                                        case 'perfume': await commands.new.perfume(this.sock, from, msg, this, q); break;
+                                        case 'art': await commands.new.art(this.sock, from, msg, this, q); break;
+                                        case 'sculpture': await commands.new.sculpture(this.sock, from, msg, this, q); break;
+                                        case 'tattoo': await commands.new.tattoo(this.sock, from, msg, this, q); break;
+                                        case 'mural': await commands.new.mural(this.sock, from, msg, this, q); break;
+                                        case 'encrypt': await commands.new.encrypt(this.sock, from, msg, q); break;
+                                        case 'decrypt': await commands.new.decrypt(this.sock, from, msg, q); break;
+                                        case 'selfdestruct': await commands.new.selfdestruct(this.sock, from, msg, q); break;
+                                        case 'burnafter': await commands.new.burnafter(this.sock, from, msg); break;
+                                        case 'anonymous': await commands.new.anonymous(this.sock, from, msg, q); break;
+                                        case 'incognito': await commands.new.incognito(this.sock, from, msg); break;
+                                        case 'fakecall': await commands.new.fakecall(this.sock, from, msg); break;
+                                        case 'fakescreen': await commands.new.fakescreen(this.sock, from, msg); break;
+                                        case 'stealth': await commands.new.stealth(this.sock, from, msg); break;
                                     }
                                 } catch (e) {
                                     this.sendLog(`Command error (${commandName}): ` + e.message, 'error');

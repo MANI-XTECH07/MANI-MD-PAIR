@@ -19,7 +19,11 @@ async function allMenu(sock, from, msg, session, commands) {
         '🕌 ISLAMIC': ['quran', 'hadith', 'prayer', 'qibla', 'asmaulhusna', 'surah', 'ayat', 'tafsir', 'dua', 'azkar'],
         '🎌 ANIME': ['anime', 'manga', 'waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold', 'nom', 'bite', 'slap', 'kill', 'happy', 'wink', 'poke', 'dance', 'cringe'],
         '🏢 LOGO': ['neon', 'glitch', 'gold', '3dtext', 'fire', 'water', 'galaxy', 'marvel', 'avengers', 'transformer', 'blackpink', 'gradient', 'luxury', 'royal', 'metal', 'steel', 'chrome', 'glossy'],
-        '✏️ TEXT MAKER': ['𝗠𝗔𝗡𝗜👾', 'cup', 'coffee', 'cloud', 'smoke', 'flower', 'leaf', 'wood', 'stone', 'blood', 'horror', 'scary', 'spooky', 'christmas', 'birthday', 'love', 'heart']
+        '✏️ TEXT MAKER': ['𝗠𝗔𝗡𝗜👾', 'cup', 'coffee', 'cloud', 'smoke', 'flower', 'leaf', 'wood', 'stone', 'blood', 'horror', 'scary', 'spooky', 'christmas', 'birthday', 'love', 'heart'],
+        '📜 ANCIENT': ['ancient', 'hieroglyph', 'runes', 'cuneiform', 'papyrus', 'parchment', 'codex', 'fossil', 'ruins'],
+        '🌲 NATURE': ['tree', 'forest', 'ocean', 'mountain', 'sunset', 'rainbow', 'storm', 'tornado', 'tsunami', 'earth', 'moon', 'tide', 'airquality', 'uvindex', 'pollen'],
+        '✍️ CREATIVE': ['poem', 'song', 'rap', 'script', 'recipe', 'cocktail', 'perfume', 'art', 'sculpture', 'tattoo', 'mural'],
+        '🔐 PRIVACY': ['encrypt', 'decrypt', 'selfdestruct', 'burnafter', 'anonymous', 'incognito', 'fakecall', 'fakescreen', 'stealth']
     };
 
     // ===== BUILD LIST (Compact per category) =====
